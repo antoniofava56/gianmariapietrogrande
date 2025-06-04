@@ -1,0 +1,438 @@
+<!D<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianmaria Pietrogrande - Profilo Professionale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f1e9;
+            color: #4a3f35;
+        }
+        
+        .gold-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #c5a267, transparent);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(74, 63, 53, 0.15);
+        }
+        
+        .gold-hover:hover {
+            color: #c5a267;
+            transition: color 0.3s ease;
+        }
+        
+        .gold-bg-opaque {
+            background-color: rgba(197, 162, 103, 0.9);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-[#4a3f35] py-6 border-b-4 border-[#c5a267]">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-serif font-bold text-[#c5a267]">Gianmaria Pietrogrande</h1>
+                    <p class="text-sm md:text-base text-[#d9c7a7] uppercase tracking-wider mt-1">Agente e Rappresentante di Giocattoli</p>
+                </div>
+                <div class="hidden md:flex space-x-2">
+                    <a href="#about" class="px-4 py-2 text-[#d9c7a7] hover:text-[#c5a267] transition duration-300">Profilo</a>
+                    <a href="#experience" class="px-4 py-2 text-[#d9c7a7] hover:text-[#c5a267] transition duration-300">Esperienza</a>
+                    <a href="#contact" class="px-4 py-2 text-[#d9c7a7] hover:text-[#c5a267] transition duration-300">Contatti</a>
+                </div>
+                <button class="md:hidden text-[#c5a267] text-2xl" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-2" id="mobile-menu">
+                <a href="#about" class="block py-2 text-[#d9c7a7] hover:text-[#c5a267]">Profilo</a>
+                <a href="#experience" class="block py-2 text-[#d9c7a7] hover:text-[#c5a267]">Esperienza</a>
+                <a href="#contact" class="block py-2 text-[#d9c7a7] hover:text-[#c5a267]">Contatti</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-[url('https://images.unsplash.com/photo-1616486339012-3dffb39a0a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center bg-no-repeat h-96 flex items-center fade-in">
+        <div class="absolute inset-0 bg-[#4a3f35] opacity-70"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#c5a267] mb-4">Eccellenza nella rappresentanza di giocattoli</h2>
+                <p class="text-xl text-[#f5f1e9]">15 anni di esperienza nel settore con un approccio personalizzato e una conoscenza approfondita del mercato</p>
+                <a href="#contact" class="inline-block mt-6 px-8 py-3 bg-[#c5a267] hover:bg-[#b89861] text-[#4a3f35] font-semibold rounded-sm transition duration-300">Contattami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="about" class="py-16 bg-[#f5f1e9] fade-in delay-1">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/3 mb-10 lg:mb-0 lg:pr-10">
+                    <div class="relative">
+                        <div class="absolute -inset-4 border-2 border-[#c5a267] rounded-sm"></div>
+                        <div class="relative">
+                            <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=843129614486318" alt="Gianmaria Pietrogrande" class="w-full h-auto rounded-sm">
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3">
+                    <h3 class="text-3xl font-serif font-bold text-[#4a3f35] mb-6 relative">
+                        <span class="relative inline-block">
+                            <span class="absolute -bottom-2 left-0 w-full h-1 bg-[#c5a267]"></span>
+                            Profilo Professionale
+                        </span>
+                    </h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-[#4a3f35] mb-3">Dati Anagrafici e Aziendali</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-user text-[#c5a267] mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-sm text-[#4a3f35] opacity-70">Nome completo</p>
+                                    <p class="font-medium">Gianmaria Pietrogrande</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-id-card text-[#c5a267] mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-sm text-[#4a3f35] opacity-70">Codice Fiscale</p>
+                                    <p class="font-medium">PTRGMR70D30F205S</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-building text-[#c5a267] mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-sm text-[#4a3f35] opacity-70">Partita IVA</p>
+                                    <p class="font-medium">00599490455</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-calendar-alt text-[#c5a267] mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-sm text-[#4a3f35] opacity-70">Data di iscrizione</p>
+                                    <p class="font-medium">11 ottobre 2007</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-[#4a3f35] mb-3">Attività Professionale</h4>
+                        <p class="text-[#4a3f35] leading-relaxed">
+                            Gianmaria Pietrogrande opera come agente e rappresentante di giocattoli, gestendo un'impresa individuale con sede a Buti, in provincia di Pisa. 
+                            La sua attività si concentra sulla rappresentanza commerciale nel settore dei giocattoli, collaborando con produttori e distributori 
+                            per la promozione e la vendita di prodotti destinati al mercato italiano.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-[#4a3f35] text-[#f5f1e9] fade-in">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-serif font-bold text-[#c5a267] mb-12 text-center">Esperienza e Settore</h3>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Experience Card 1 -->
+                <div class="bg-[#5a4e42] p-8 rounded-sm card-shadow transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl text-[#c5a267] mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Esperienza Quindicennale</h4>
+                    <p class="text-[#d9c7a7] leading-relaxed">
+                        Con oltre 15 anni di esperienza nel settore, Gianmaria ha sviluppato una solida rete di contatti e competenze nella rappresentanza di giocattoli.
+                    </p>
+                </div>
+                
+                <!-- Experience Card 2 -->
+                <div class="bg-[#5a4e42] p-8 rounded-sm card-shadow transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl text-[#c5a267] mb-4">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Clientela Specializzata</h4>
+                    <p class="text-[#d9c7a7] leading-relaxed">
+                        La sua attività si rivolge principalmente a negozi di giocattoli, catene di distribuzione e rivenditori specializzati.
+                    </p>
+                </div>
+                
+                <!-- Experience Card 3 -->
+                <div class="bg-[#5a4e42] p-8 rounded-sm card-shadow transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl text-[#c5a267] mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Approccio Personalizzato</h4>
+                    <p class="text-[#d9c7a7] leading-relaxed">
+                        L'impresa individuale si distingue per un approccio personalizzato e una conoscenza approfondita del mercato dei giocattoli.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-[#5a4e42] p-8 rounded-sm card-shadow">
+                <h4 class="text-2xl font-serif font-semibold text-[#c5a267] mb-6">Dettagli Aziendali</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt text-[#c5a267] mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-semibold mb-1">Sede legale</h5>
+                                <p>Via per Rivolta 6, 56032 Buti (PI), Italia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-envelope text-[#c5a267] mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-semibold mb-1">PEC</h5>
+                                <p>[email protected]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-id-badge text-[#c5a267] mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-semibold mb-1">Numero REA</h5>
+                                <p>160233</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-users text-[#c5a267] mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-semibold mb-1">Dipendenti</h5>
+                                <p>2 (dato aggiornato al 2025)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-industry text-[#c5a267] mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-semibold mb-1">Codice ATECO</h5>
+                                <p>46.18.95 – Agenti e rappresentanti di giocattoli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-[#f5f1e9] fade-in delay-2">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-serif font-bold text-[#4a3f35] mb-12 text-center">Contattami</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white p-8 rounded-sm card-shadow">
+                        <div class="text-4xl text-[#c5a267] mb-6 text-center">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-[#4a3f35] mb-4 text-center">Invia un messaggio</h4>
+                        
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-[#4a3f35] mb-1">Nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-[#d9c7a7] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#c5a267] focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-[#4a3f35] mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-[#d9c7a7] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#c5a267] focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-[#4a3f35] mb-1">Messaggio</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-[#d9c7a7] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#c5a267] focus:border-transparent" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3 bg-[#4a3f35] hover:bg-[#3a3026] text-[#f5f1e9] font-semibold rounded-sm transition duration-300">Invia</button>
+                        </form>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-sm card-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="text-4xl text-[#c5a267] mb-6 text-center">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-[#4a3f35] mb-4 text-center">Informazioni di contatto</h4>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-[#c5a267] mt-1 mr-4"></i>
+                                    <div>
+                                        <h5 class="font-medium text-[#4a3f35]">Indirizzo</h5>
+                                        <p>Via per Rivolta 6, 56032 Buti (PI), Italia</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope text-[#c5a267] mt-1 mr-4"></i>
+                                    <div>
+                                        <h5 class="font-medium text-[#4a3f35]">PEC</h5>
+                                        <p>[email protected]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h5 class="text-lg font-semibold text-[#4a3f35] mb-3">Orari di ufficio</h5>
+                            <p>Lunedì - Venerdì: 9:00 - 18:00</p>
+                            <p>Sabato: Su appuntamento</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <h4 class="text-xl font-semibold text-[#4a3f35] mb-4">Documenti correlati</h4>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#" class="px-4 py-2 border border-[#4a3f35] text-[#4a3f35] hover:bg-[#4a3f35] hover:text-[#f5f1e9] transition duration-300 inline-flex items-center">
+                            <i class="fas fa-file-alt mr-2"></i> Visura Camerale
+                        </a>
+                        <a href="#" class="px-4 py-2 border border-[#4a3f35] text-[#4a3f35] hover:bg-[#4a3f35] hover:text-[#f5f1e9] transition duration-300 inline-flex items-center">
+                            <i class="fas fa-file-invoice mr-2"></i> Certificato REA
+                        </a>
+                        <a href="#" class="px-4 py-2 border border-[#4a3f35] text-[#4a3f35] hover:bg-[#4a3f35] hover:text-[#f5f1e9] transition duration-300 inline-flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i> Profilo Aziendale
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4a3f35] py-8 text-[#d9c7a7]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2025 Gianmaria Pietrogrande - P.IVA 00599490455</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-2xl text-[#d9c7a7] hover:text-[#c5a267] transition duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-[#d9c7a7] hover:text-[#c5a267] transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-[#d9c7a7] hover:text-[#c5a267] transition duration-300">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-[#5a4e42] text-center text-sm">
+                <p>Impresa individuale | Sede legale: Via per Rivolta 6, 56032 Buti (PI) | Numero REA: 160233</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-[#c5a267] hover:bg-[#b89861] text-[#4a3f35] w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Grazie per il tuo messaggio! Ti risponderò al più presto.');
+            this.reset();
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Add animation classes when elements come into view
+        const handleIntersection = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+            element.classList.add('opacity-0');
+        });
+
+        // Check initial viewport for already visible elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                el.classList.add('fade-in');
+                el.classList.remove('opacity-0');
+            }
+        });
+    </script>
+</body>
+</html>
